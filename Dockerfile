@@ -8,7 +8,7 @@ LABEL "com.github.actions.color"="yellow"
 LABEL "repository"="http://github.com/srt32/hugo-actions"
 LABEL "homepage"="http://github.com/srt32/hugo-actions"
 
-RUN apk add --no-cache  --repository=http://dl-cdn.alpinelinux.org/alpine/v3.11/community hugo=0.55.6-r0  bash
+RUN apk add --no-cache  --repository=http://dl-cdn.alpinelinux.org/alpine/v3.10/community hugo=0.55.6-r0  bash
 
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
